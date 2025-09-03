@@ -1,4 +1,4 @@
-package com.nullifidianz.auth_course.Mapper;
+package com.nullifidianz.auth_course.mapper;
 
 import org.springframework.stereotype.Component;
 
@@ -12,7 +12,7 @@ public class ProductMapper {
     public Product toEntity(ProductRequest request) {
         Product product = new Product();
         product.setName(request.name());
-        product.setValue(request.value());
+        product.setProductValue(request.value());
         product.setQuantity(request.quantity());
         product.setObservation(request.observation());
 
@@ -20,7 +20,7 @@ public class ProductMapper {
     }
 
     public ProductResponse toResponse(Product product) {
-        return new ProductResponse(product.getId(), product.getName(), product.getQuantity(), product.getValue(),
+        return new ProductResponse(product.getId(), product.getName(), product.getQuantity(), product.getProductValue(),
                 product.getObservation());
     }
 }

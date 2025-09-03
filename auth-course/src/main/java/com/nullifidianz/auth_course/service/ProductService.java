@@ -4,9 +4,9 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.nullifidianz.auth_course.Mapper.ProductMapper;
 import com.nullifidianz.auth_course.dto.ProductRequest;
 import com.nullifidianz.auth_course.dto.ProductResponse;
+import com.nullifidianz.auth_course.mapper.ProductMapper;
 import com.nullifidianz.auth_course.model.Product;
 import com.nullifidianz.auth_course.model.exception.ResourceNotFoundException;
 import com.nullifidianz.auth_course.repository.ProductRepository;
@@ -49,7 +49,7 @@ public class ProductService {
         }
 
         if (request.value() != null) {
-            product.setValue(request.value());
+            product.setProductValue(request.value());
         }
 
         if (request.observation() != null && !request.observation().isBlank()) {
