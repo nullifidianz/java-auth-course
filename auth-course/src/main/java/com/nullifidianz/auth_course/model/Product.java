@@ -26,7 +26,7 @@ public class Product {
 
     private int quantity;
 
-    private double productValue;
+    private Double productValue;
 
     private String observation;
     // #endregion

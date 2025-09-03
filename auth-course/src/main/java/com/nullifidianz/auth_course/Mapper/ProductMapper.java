@@ -12,7 +12,7 @@ public class ProductMapper {
     public Product toEntity(ProductRequest request) {
         Product product = new Product();
         product.setName(request.name());
-        product.setProductValue(request.value());
+        product.setProductValue(request.productValue());
         product.setQuantity(request.quantity());
         product.setObservation(request.observation());
 

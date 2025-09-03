@@ -48,8 +48,8 @@ public class ProductService {
             product.setQuantity(request.quantity());
         }
 
-        if (request.value() != null) {
-            product.setProductValue(request.value());
+        if (request.productValue() != null) {
+            product.setProductValue(request.productValue());
         }
 
         if (request.observation() != null && !request.observation().isBlank()) {
