@@ -2,8 +2,8 @@ package com.nullifidianz.auth_course.Mapper;
 
 import org.springframework.stereotype.Component;
 
-import com.nullifidianz.auth_course.DTO.ProductRequest;
-import com.nullifidianz.auth_course.DTO.ProductResponse;
+import com.nullifidianz.auth_course.dto.ProductRequest;
+import com.nullifidianz.auth_course.dto.ProductResponse;
 import com.nullifidianz.auth_course.model.Product;
 
 @Component
